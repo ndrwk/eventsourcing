@@ -5,6 +5,7 @@ from eventsourcing import __version__
 crypto_requires = ["pycryptodome<=3.12.99999"]
 postgresql_requires = ["psycopg2<=2.9.99999"]
 postgresql_dev_requires = ["psycopg2-binary<=2.9.99999"]
+mongodb_requires = ["pymongo<=3.13.99999"]
 
 docs_requires = (
     postgresql_dev_requires
@@ -62,6 +63,7 @@ setup(
         "crypto": crypto_requires,
         "docs": docs_requires,
         "dev": dev_requires,
+        "mongodb": mongodb_requires,
     },
     zip_safe=False,
     long_description=long_description,
